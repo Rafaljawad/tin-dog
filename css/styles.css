@@ -1,0 +1,256 @@
+body{
+    font-family: "Montserrat";
+    margin-right: 1px;
+}
+
+/**********
+title section
+***/
+
+#title{
+  background-color: #ff4c68;
+}
+.button-title{
+  margin-bottom: 40px;
+  height: 40px;
+}
+h1{
+font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+.container-fluid{
+  padding: 3% 15%;
+font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+  margin-bottom: 50px;
+      background-color: #ff4c68;
+  }
+  #navbarSupportedContent{
+    position: absolute;
+    right: 20px;
+
+  }
+
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#navbarSupportedContent{
+  text-align: left;
+}
+
+/***** we added another class to awosomefont to separate it from another awsome font features and
+decorate them separtly i1 here for apple icon to be white and i2 for google play icon to be black****/
+.i1{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.i2{
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.title-image{
+  width: 15%;
+
+  transform: rotate(25deg);
+  /**********
+  to make the image hide behind the feature section we have to give it a position
+  ***/
+position: absolute;
+
+
+right: 25%;
+}
+.tiltle-col{
+  margin-bottom: 40px;
+}
+
+/**********
+features section
+***/
+
+#features{
+  text-align: center;
+font-family: "Montserrat";
+background-color: #fff;
+margin: 10px 60px;
+/**********
+to make the feature sit on top  of the image we have to give it a position
+and so as not to change the content we give it relative
+***/
+position: relative;
+bottom: 10px;
+
+}
+.feature-row{
+  margin: 0 4%;
+}
+
+
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+
+
+}
+h2{
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.25;
+}
+p{
+  color: #8f8f8f;
+
+
+}
+i{
+  color: #ef8172;
+  font-size: 60px;
+  margin-bottom: 20px;
+
+}
+i:hover{
+  color: #ff4c68;
+}
+.features-bar{
+padding: 5%;
+  text-align: center;
+}
+/**********
+testimonials section
+***/
+
+#testimonials{
+
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+
+}
+
+.image-dog2{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+#press{
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.press-logo{
+  width: 15%;
+  padding: 20px 20px;
+}
+
+.carousel-item{
+  /**********
+  here we took the padding from #testominal section to carsule item to move the prev and next arrow a little bit
+  far from the text(testimonials)
+  ***/
+    padding: 7% 15%;
+}
+/**********
+pricing section first we made all the buttons take 97% of their part which is the column
+then we added to html codes related to buttons type from bootstrap doc we made the first one outlined and the rest primary
+then,we gave each button a specific class to decorate them separtely in css
+we gave the first button a background color when we hover over it as shown below
+***/
+.button1{
+width: 97%;
+color: black;
+border-color: black;
+
+}
+.button1:hover{
+background-color:grey; ;
+
+}
+
+.button2{
+width: 97%;
+background-color: black
+}
+.button3{
+width: 97%;
+background-color: black;
+}
+#pricing{
+width: 80%;
+position: relative;
+left: 90px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.card{
+  text-align: center;
+    font-family: "Montserrat";
+    font-size: 1rem;
+
+}
+.card-body{
+line-height: 1;
+
+}
+.pricing-col{
+margin: auto;
+}
+h2.pricing-title{
+  text-align: center;
+}
+p.pricing-title{
+  text-align: center;
+}
+/**** make the webresponsive to mobile and tablet***/
+@media (max-width: 1028px){
+  .title-image{
+    position: static;
+    transform: rotate(0deg);
+    width: 60%;
+
+  }
+  #title{
+    text-align: center;
+  }
+#pricing{
+  width: 90%;
+}
+}
+
+/**** cta section***/
+#cta{
+background-color: #ff4c68;
+padding: 40px 40px;
+text-align: center;
+
+}
+.cta-title{
+  font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+  padding: 2% 18%;
+}
+/****we gave the button class button- title and we applied some margin to give  space between the buttons
+ for the title section and cta section ***/
+.button-title{
+  margin: 1% 1%;
+}
+/**** footer section***/
+#footer{
+  background-color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-fab{
+  color: black;
+  font-size: 20px;
+  margin: 1% 1%;
+}

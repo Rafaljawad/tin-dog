@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!--bootstrap link-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--css stylesheet link-->
+
+<link rel="stylesheet" href="css/styles.css">
+  <!--google font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Kings&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+      <!--font awsome icon link-->
+    <script src="https://kit.fontawesome.com/df5aa5937e.js" crossorigin="anonymous"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Kings&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <section id="title">
+<div class="container-fluid">
+    <!-- Nav Bar -->
+      <!-- below i deleted the class bg-light and in css i put just background-color instead
+    because if i leave just bg-light the nav bar will stay white even if i change it in css
+  but now i have changed it to the color that i want in css  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="">tindog</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <!-- we put in each href "# id" to go exactly to the section that we already gave it an id
+          so, that is why important to give each section an id instead of class
+        now when we click on pricing on the nav bar it will take us to the pricing section....etc-->
+              <a class="nav-link" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+          </li>
+      </ul>
+   </div>
+  </nav>
+
+
+
+    <!-- Title -->
+
+    <div class="row">
+      <div class="title-col col-lg-6">
+
+<h1>Meet new and interesting dogs nearby.</h1>
+<!--we added another class to awosomefont (i)to separate it from another awsome font features and
+decorate them separtly i1 here for apple icon to be white and i2 for google play icon to be black****/-->
+    <button type="button" class="button-title btn btn-dark btn-lg"><i class="fab fa-apple i1"></i> Download</button>
+    <button type="button" class="button-title btn btn-outline-light btn-lg"><i class="fab fa-google-play i2"></i> Download</button>
+
+    </div>
+
+    <div class="col-lg-6">
+      <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+    </div>
+  </div>
+</div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row feature-row">
+      <div class=" features-bar col-lg-4 col-md-12">
+
+        <i class="fas fa-check-circle"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+  </div>
+  <div class="features-bar col-lg-4 col-md-12">
+<i class="fas fa-bullseye"></i>
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+  </div>
+  <div class="features-bar col-lg-4 col-md-12">
+<i class="fas fa-heart"></i>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+</div>
+</div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img class="image-dog2" src="images/dog-img.jpg" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+      <!-- here, the second slide didnt work so, i added the java script bootstrap link below the css bootstrap link and it did work
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+-->
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+       <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+       <em>Beverly, Illinois</em>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+  <!--************
+       first step is to make a section that include all the codes related to pricing section and target it with id
+    to mange it separtely
+    <section id="pricing">
+
+        second step: make a class for card property and bring the code from bootstarp DOC
+      <div class="card">
+
+          3rd step: make a header for the card which is typically hold the name or the title of the card
+    <div class="card-header">
+        <h2>A Plan for Every Dog's Needs</h2>
+    </div>
+
+       4th step: make card body class which is containing the descriptcon of the card and most of times buuton
+    <div class="card-body">
+      <p>Simple and affordable price plans for your and your dog.</p>
+  ***********first card which is just descriptin***********
+    </div>********** --->
+      <section id="pricing">
+          <h2 class="pricing-title">A Plan for Every Dog's Needs</h2>
+          <p class="pricing-title">Simple and affordable price plans for your and your dog.</p>
+
+
+  <!--************here we will divide the screen to one row
+  and this row contains 3 columns(cards) and each card has body and <header>
+    1-create class of row
+    2- create class of column and make it responsive depending on the size of screen
+    3- inside each column will create class card and then card header and body and repeat
+    this in each card
+  ********* --->
+  <div class="row">
+    <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+<div class="card-header">
+  <h3>Chihuahua</h3>
+</div>
+      <div class="card-body">
+    <h2 class="price">Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+  <!--we can leave the button code as below and modify it in css by changing the color or
+  make the buttons take the full width of the card  or by adding this code
+ <button class=" btn btn-lg-block btn-outline-dark"  ********* --->
+  <button type="button" class="btn btn-light button1">sign up</button>
+</div>
+</div>
+</div>
+<!-- inside the second column will create class card and then card header and body-->
+<div class="pricing-col col-lg-4 col-md-6">
+    <div class="card">
+<div class="card-header">
+    <h3>Labrador</h3>
+
+  </div>
+      <div class="card-body">
+          <h2 class="price">$49 / mo</h2>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+<button type="button" class="btn btn-primary button2">sign up</button>
+</div>
+</div>
+</div>
+<!-- inside the third column will create class card and then card header and body-->
+<div class="pricing-col col-lg-4 col-md-6">
+    <div class="card">
+<div class="card-header">
+    <h3>Mastiff</h3>
+
+  </div>
+      <div class="card-body">
+        <h2 class="price">$99 / mo</h2>
+    <p>Pirority Listing</p>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+  <button type="button" class="btn btn-primary button3">sign up</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-title">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="button-title btn btn-dark btn-lg"><i class="fab fa-apple i1"></i> Download</button>
+    <button type="button" class="button-title btn btn-outline-light btn-lg"><i class="fab fa-google-play i2"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+<i class="footer-fab fab fa-twitter"></i>
+<i class="footer-fab fab fa-facebook"></i>
+<i class="footer-fab fab fa-instagram"></i>
+<i class="footer-fab far fa-envelope"></i>
+
+    <p>© Copyright 2022 TinDog</p>
+    <p>Made with💓 by Rafal jawad</p>
+
+  </footer>
+
+
+</body>
+
+</html>
